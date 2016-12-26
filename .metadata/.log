@@ -1,0 +1,120 @@
+!SESSION 2014-10-19 14:47:34.728 -----------------------------------------------
+eclipse.buildId=v22.2.1-833290
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2014-10-19 14:48:24.168
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at file:/C:/MyEverything/Samsung_Mobile_SDK_1.5/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2014-10-19 14:48:24.170
+!MESSAGE No repository found at file:/C:/MyEverything/Samsung_Mobile_SDK_1.5/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2014-10-19 14:48:41.613
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at jar:file:/C:/MyEverything/Samsung_Mobile_SDK_1.5.zip!/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2014-10-19 14:48:41.614
+!MESSAGE No repository found at jar:file:/C:/MyEverything/Samsung_Mobile_SDK_1.5.zip!/.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-10-19 14:48:55.237
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2014-10-19 14:48:55.237
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.237
+!MESSAGE Software being installed: Android Native Development Tools 23.0.4.1468518 (com.android.ide.eclipse.ndk.feature.feature.group 23.0.4.1468518)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.237
+!MESSAGE Software currently installed: Android Developer Tools 22.2.1.v201309180102-833290 (com.android.ide.eclipse.adt.package.product 22.2.1.v201309180102-833290)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-19 14:48:55.237
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.237
+!MESSAGE ADT CDT Integration 23.0.4.1468518 (com.android.ide.eclipse.ndk 23.0.4.1468518)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.237
+!MESSAGE ADT CDT Integration 22.2.1.v201309180102-833290 (com.android.ide.eclipse.ndk 22.2.1.v201309180102-833290)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-19 14:48:55.237
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.237
+!MESSAGE From: ADT Package 22.2.1.v201309180102-833290 (com.android.ide.eclipse.adt.package.feature.group 22.2.1.v201309180102-833290)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.238
+!MESSAGE To: com.android.ide.eclipse.ndk.feature.group 22.2.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-19 14:48:55.238
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.238
+!MESSAGE From: Android Developer Tools 22.2.1.v201309180102-833290 (com.android.ide.eclipse.adt.package.product 22.2.1.v201309180102-833290)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.238
+!MESSAGE To: com.android.ide.eclipse.adt.package.feature.group [22.2.1.v201309180102-833290]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-19 14:48:55.238
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.238
+!MESSAGE From: Android Native Development Tools 23.0.4.1468518 (com.android.ide.eclipse.ndk.feature.feature.group 23.0.4.1468518)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.238
+!MESSAGE To: com.android.ide.eclipse.ndk [23.0.4.1468518]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-19 14:48:55.238
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.238
+!MESSAGE From: Android Native Development Tools 22.2.1.v201309180102-833290 (com.android.ide.eclipse.ndk.feature.group 22.2.1.v201309180102-833290)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.238
+!MESSAGE To: com.android.ide.eclipse.ndk [22.2.1.v201309180102-833290]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-10-19 14:48:55.503
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2014-10-19 14:48:55.503
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.503
+!MESSAGE Software being installed: Android Native Development Tools 23.0.4.1468518 (com.android.ide.eclipse.ndk.feature.feature.group 23.0.4.1468518)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.503
+!MESSAGE Software currently installed: Android Developer Tools 22.2.1.v201309180102-833290 (com.android.ide.eclipse.adt.package.product 22.2.1.v201309180102-833290)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-19 14:48:55.504
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.504
+!MESSAGE ADT CDT Integration 23.0.4.1468518 (com.android.ide.eclipse.ndk 23.0.4.1468518)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.504
+!MESSAGE ADT CDT Integration 22.2.1.v201309180102-833290 (com.android.ide.eclipse.ndk 22.2.1.v201309180102-833290)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-19 14:48:55.504
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.504
+!MESSAGE From: ADT Package 22.2.1.v201309180102-833290 (com.android.ide.eclipse.adt.package.feature.group 22.2.1.v201309180102-833290)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.504
+!MESSAGE To: com.android.ide.eclipse.ndk.feature.group 22.2.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-19 14:48:55.504
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.504
+!MESSAGE From: Android Developer Tools 22.2.1.v201309180102-833290 (com.android.ide.eclipse.adt.package.product 22.2.1.v201309180102-833290)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.504
+!MESSAGE To: com.android.ide.eclipse.adt.package.feature.group [22.2.1.v201309180102-833290]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-19 14:48:55.504
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.504
+!MESSAGE From: Android Native Development Tools 23.0.4.1468518 (com.android.ide.eclipse.ndk.feature.feature.group 23.0.4.1468518)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.504
+!MESSAGE To: com.android.ide.eclipse.ndk [23.0.4.1468518]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-19 14:48:55.504
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.505
+!MESSAGE From: Android Native Development Tools 22.2.1.v201309180102-833290 (com.android.ide.eclipse.ndk.feature.group 22.2.1.v201309180102-833290)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-19 14:48:55.505
+!MESSAGE To: com.android.ide.eclipse.ndk [22.2.1.v201309180102-833290]
+
+!ENTRY org.eclipse.equinox.p2.touchpoint.natives 2 0 2014-10-19 14:49:59.883
+!MESSAGE Could not remove temporary backup directory (it is safe to manually delete it and its contents): C:\Users\TANVIR~1\AppData\Local\Temp\profile_29253eb17960_c0a80067d76b

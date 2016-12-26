@@ -1,0 +1,18 @@
+cd C:\MyEverything\adt-bundle-windows-x86_64-20130917\workspace\SocketProgramming\src
+javac edu\tanvirirfan\chowdhury\server\*.java
+java edu.tanvirirfan.chowdhury.server.MagicMathServer
+
+cd C:\MyEverything\adt-bundle-windows-x86_64-20130917\workspace\SocketProgramming\src
+javac edu\tanvirirfan\chowdhury\client\*.java
+java edu.tanvirirfan.chowdhury.client.MagicMathClient "localhost" 10000
+
+
+
+
+cd C:\MyEverything\UTSA_STUDY\Fall_2014\CS_5523_OS\Project\SocketProgramming\bin
+javac edu\tanvirirfan\chowdhury\server\*.java
+java edu.tanvirirfan.chowdhury.server.MagicMathServer
+
+cd C:\MyEverything\UTSA_STUDY\Fall_2014\CS_5523_OS\Project\SocketProgramming\bin
+javac edu\tanvirirfan\chowdhury\client\*.java
+java edu.tanvirirfan.chowdhury.client.MagicMathClient "localhost" 10000

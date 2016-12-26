@@ -1,0 +1,14 @@
+1. DeadLock because of "Socket Reset" by different thread:
+	Specification says that I need to use 5 THREADs in each CLIENT. What I was doing, I was using only one socket for the all Threads. This force my
+	application to have DEAD LOCK. Here is why- I was starting all the THREADs in the constructor of the CLIENT. After they got the CPU slot, they 
+	request to the SERVER for one specific service that request was done successfully.  As I was creating one socket before every connection, all 
+	the Thread could request their first request. But then the were waiting for the response from the SERVER. In the mean time as the socket is 
+	created again, server could not send response to the proper client. Which makes the "DEAD LOCK" situation. :'( This problem wasted a HUGE AMOUNT
+	of my time.
+2. Request was discarded by Server:
+	I was doing the parsing of the request in the main thread of Server, which take a lot of time in case of "magicSort" operation and because of 
+	this lots of other operations were discarded. Later, I use dedicated thread for parsing the input. They are also from the THREAD_POOL (NOT a
+	new thread for each request) 
+3. Overflow in Input:
+	in magicAdd, magicSub, magicMul operations, range of the operand is from Float.MIN_VALUE to Float.MAX_VALUE they can lead to Overflow.
+	 
